@@ -1,14 +1,22 @@
-def prime (number):
-    num = number
-    if num > 1:
-        for i in range(2, num // 2):
-             if (num % i) == 0:
-                print(num, "is not a prime number")
-                break
-             else:
-                 print(num, "is a prime number")
+import math
 
-    else:
-        print(num, "is not a prime number")
+
+def prime(number):
+    if number ==1:
+        return False
+    for i in range (2, int(math.sqrt(number))+1):
+        if number % i == 0:
+            return False
+    return True
+
 
 res = prime(24)
+
+
+def is_super_prime():
+
+    i = 2
+    is_superprime = True
+
+
+    return
